@@ -1,53 +1,67 @@
 <!DOCTYPE html>
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"/>
-  <style>
-    .row {
-      margin-top: 25vh;
-    }
-    .message {
-      margin-top: 0;
-      text-align: center;
-    }
-    label {
-      font-size: 16px;
-    }
-    .btn {
-      transition: transform .1s ease;
-    }
-    .btn:active {
-      transform: scale(0.95);
-    }
-  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600&display=swap" rel="stylesheet">
   <title>Secret Message</title>
 </head>
-
 <body>
-  <div class="row">
-    <div class="col s8 offset-s2">
-      <div id="message-show" class="card-panel hide">
-        <h3 class="message"></h3>
-        <a href="./index.html">Create your own secret message</a>
-      </div>
-      <div id="message-form" class="card-panel">
-        <form>
-          <label>Enter a Secret Message</label>
-          <input id="message-input" />
-          <button class="btn">Codify Message</button>
-        </form>
-      </div>
-      <div id="link-form" class="card-panel hide">
-        <div>
-          Share this link with you secret menssage
-          <input id="link-input" />
+  <div class="wrap-forms">
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div id="message-show" class="card-panel hide">
+          <h4 class="message"></h4>
+          <a href="./index.html">Create your own secret message</a>
+        </div>
+        <div id="message-form" class="card-panel">
+          <form>
+            <label>Enter a Secret Message</label>
+            <input id="message-input" />
+            <button class="btn">Codify Message</button>
+          </form>
+        </div>
+        <div id="link-form" class="card-panel hide">
+          <div>
+            <label> Share this link with you secret menssage</label>
+            <input id="link-input" />
+          </div>
         </div>
       </div>
     </div>
   </div>
+  <div class="icons">
+    <!-- DEV -->
+    <a href="https://dev.to/vplentinax" target="_blank">
+      <svg>
+        <use class="icons__dev" href="./img/sprite.svg#icon-dev"></use>
+      </svg>
+    </a>
+    <!-- GITHUB -->
+    <a href="https://github.com/vplentinax" target="_blank">
+      <svg>
+        <use class="icons__git" href="./img/sprite.svg#icon-git"></use>
+      </svg>
+    </a>
+    <!-- INSTAGRAM -->
+    <a href="https://www.instagram.com/vplentinax/" target="_blank">
+      <svg>
+        <use class="icons__insta" href="./img/sprite.svg#icon-insta"></use>
+      </svg>
+    </a>
+    <!-- TWITER -->
+    <a href="https://twitter.com/vplentinax" target="_blank">
+      <svg>
+        <use class="icons__insta" href="./img/sprite.svg#icon-twit"></use>
+      </svg>
+    </a>
+  </div>
+  <footer class="footer">
+    <p>Made with <span>&#10084;</span> </p>
+    <span>@vplentinax</span>
+  </footer>
   <script src="index.js"></script>
 </body>
-
 </html>
