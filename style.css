@@ -1,107 +1,97 @@
 *,
 *::after,
 *::before {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-	font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 body {
-	width: 100vw;
-	height: 100vh;
-	background-image: linear-gradient(
-		to right bottom,
-		#86d16b,
-		#81d473,
-		#7dd77a,
-		#78d982,
-		#73dc8a,
-		#4fd79f,
-		#2ad0b1,
-		#00c8bf,
-		#00b2d5,
-		#0097e7,
-		#0074e5,
-		#6a43c2
-	);
-	display: grid;
-	grid-template-rows: 10vh 70vh 10vh 5vh 5vh;
-	align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient( to right bottom, 
+	 #86d16b, #81d473, #7dd77a, #78d982, #73dc8a, 
+	 #4fd79f, #2ad0b1, #00c8bf, #00b2d5, #0097e7, 
+	 #0074e5, #6a43c2);
+  display: grid;
+  grid-template-rows: 10vh 70vh 10vh 5vh 5vh;
+  align-items: center;
 }
 
 .wrap-forms {
-	grid-row: 2 / 3;
+  grid-row: 2 / 3;
 }
 
 .col {
-	width: 100%;
+  width: 100%;
 }
+
 .card-panel {
-	width: 100%;
-	box-shadow: 2px 5px 22px -1px rgba(0, 0, 0, 0.64);
+  width: 100%;
+  box-shadow: 2px 5px 22px -1px rgba(0, 0, 0, 0.64);
 }
 
 .message {
-	text-align: center;
-	margin-top: 10px;
-	margin-bottom: 20px;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 a {
-	border-bottom: 1px solid #00b2d5;
+  border-bottom: 1px solid #00b2d5;
 }
 
 #message-input,
 #link-input {
-	margin: 10px 0 20px 0;
-	border-bottom: 1px solid #00b2d5;
+  margin: 10px 0 20px 0;
+  border-bottom: 1px solid #00b2d5;
 }
 
 label {
-	font-size: 20px;
-	color: #00b2d5;
+  font-size: 20px;
+  color: #00b2d5;
 }
 
 .btn {
-	border-radius: 5px;
-	box-shadow: none;
-	background-color: #00c8bf;
-	transition: transform 0.1s ease;
-	font-family: 'Josefin Sans', sans-serif;
-	font-weight: bold;
+  border-radius: 5px;
+  box-shadow: none;
+  background-color: #00c8bf;
+  transition: transform 0.1s ease;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
 }
 
 .btn:hover {
-	background-color: #00b2d5;
+  background-color: #00b2d5;
 }
 
 .btn:active {
-	transform: scale(0.95);
+  transform: scale(0.95);
 }
 
 .icons {
-	grid-row: 3 /4;
-	display: flex;
-	justify-content: center;
+  grid-row: 3 /4;
+  display: flex;
+  justify-content: center;
 }
 
-.icons > a > svg {
-	width: 30px;
-	height: 30px;
-	margin-right: 10px;
+.icons>a>svg {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
 }
 
-.icons > a:active {
-	transform: scale(0.95);
+.icons>a:active {
+  transform: scale(0.95);
 }
 
 footer {
-	grid-row: 4 / 5;
-	justify-self: center;
-	font-size: small;
-	color: #fff;
+  grid-row: 4 / 5;
+  justify-self: center;
+  font-size: small;
+  color: #fff;
 }
